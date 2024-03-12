@@ -2,15 +2,14 @@
 using namespace std;
 
 int main(){
-int AnosFumando; int preço; int CigarrosPorDia; int TotalGasto; int DiasFumando;
+    int AnosFumando, CigarrosPorDia;
+    float GastoTotal, preço;
     cout << "\tA quantos anos você fuma?\n";
     cin >> AnosFumando;
-    cout << "\tqual o preço medio do cigarro que você compra?\n";
-    cin >> preço;
     cout << "\tquantos cigarros você fuma por dia?\n";
     cin >> CigarrosPorDia;
-    
-    DiasFumando = AnosFumando * 365;
-    TotalGasto = preço * CigarrosPorDia * DiasFumando;
-    cout <<"você ja gastou " << TotalGasto << " em cigarros";
+    cout << "\tqual o preço da carteira que você compra?\n";
+    cin >> preço;
+    GastoTotal = AnosFumando * 365 * CigarrosPorDia * (preço / 20);
+    cout << "\t" << GastoTotal << " reais seus viraram fumaça";
 }
