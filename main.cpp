@@ -16,7 +16,7 @@ int main(){
     else{
         cout << "\tem quantas parcelasgostaria de pagar suas compras?\n";
         cin >> parcelas;
-        if(parcelas > 10){
+        while(parcelas > 10){
             cout << "\tvalor invalido, o maximo de parcelas é 10\n";
             cin >> parcelas;
         }
