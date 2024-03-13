@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    float valor, valorTotal;
+    int parcelas, pergunta;
+    parcelas = 1;
+    
+    cin >> valor;
+    cin >> pergunta;
+    cin >> parcelas;
+    if (pergunta == 1){
+        valorTotal = valor;
+    }
+    else{
+        valorTotal = valor / parcelas;
+    };
+    cout << valorTotal;
+}
