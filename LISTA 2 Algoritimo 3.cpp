@@ -4,18 +4,19 @@ using namespace std;
 int main(){ 
 char sexo;
 float altura;
-cout << "\tqual seu sexo?\n masculino: m\n feminino: f\n"
+cout << "\tqual seu sexo?\n\t masculino: m\n\t feminino: f\n\t :";
 cin >> sexo;
+cout << "\tqual a sua altura?: ";
 cin >> altura;
-if(sexo == m){
-    cout << (72.7 * altura) - 58;
+if(sexo == 'm'){
+    cout << "\to seu peso ideal seria " << (72.7 * altura) - 58 << "Kg"; 
 }
 else{
-    if(sexo == f){
-        cout << (62.1 * altura) - 44.7;
+    if(sexo == 'f'){
+        cout << "\to seu peso ideal seria "  << (62.1 * altura) - 44.7 << "Kg";
     }
     else{
-        cout << "sexo invalido";
+        cout << "\tsexo invalido";
     }
 }
 }
