@@ -8,8 +8,9 @@ int main(){
     cin >> codigo1;
     cout << "\tquantos você ira querer?: ";
     cin >> quantidade1;
-    cout << "\tescolha sua bebida\n\t105 - Refrigerante 1,00$\n\t106 - Suco 2,00$\n\t107 - Nescau 1,50$";
+    cout << "\tescolha sua bebida\n\t105 - Refrigerante 1,00$\n\t106 - Suco 2,00$\n\t107 - Nescau 1,50$\n\tdigite o codigo da sua bebida: ";
     cin >> codigo2;
+    cout << "\tquantas você ira querer?: ";
     cin >> quantidade2;
     
     if(codigo1 == 100){
@@ -36,5 +37,5 @@ int main(){
     if (codigo2 == 107){
         valorFinal = valorFinal + 1.50 * quantidade2;
     }
-    cout << valorFinal;
+    cout << "O valor total do seu pedido foram " << valorFinal << " reais"; 
 }
