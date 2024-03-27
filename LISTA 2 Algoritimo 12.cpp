@@ -13,11 +13,11 @@ int main(){
 else{
     if(idade >= 65){
       cout << "\tvocê pode solicitar a aposentadoria";
-    }
+        }
     else{
         if(anosT >= 30){
         cout << "\tvocê pode solicitar a aposentadoria";
-    }
+            }
          else{
                 if(idade >= 60 && anosT >= 25){
                 cout << "\tvocê pode solicitar a aposentadoria";
