@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-int cod, codV, id, idV = 0, idN = 100, rep = 0;
+int cod, codV, id, idV, idN, rep;
 /*cod = codigo, codV codigo do mais velho,id = idVde, 
 idN = idVde do mais novo e rep = repetição.*/
 for(rep = 0; rep != 100; rep++){
