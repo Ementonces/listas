@@ -19,16 +19,16 @@ int main()
     float valor, ValorTotal, ValorLocal;
     cout << "Insira quantos motoristas serão analizados: ";
     cin  >> motoristas;
-    for(motoristas; motoristas != 0; motoristas--){
+    for(motoristas; motoristas > 0; motoristas--){
         cout << "Insira o número da carteira do motorista: ";
         cin >> carteira;
         cout << "Insira o número de multas do motorista: ";
         cin >> multas;
-        for(multas; multas != 0; multas--){
+        for(multas; multas > 0; multas--){
            cout << "insira o valor da multa: ";
            cin >> valor;
            ValorLocal += valor;
-           cout << "esse motorista tem o valor de R$" << ValorLocal << " Em multas";
+           cout << "esse motorista tem o valor de R$ " << ValorLocal << " Em multas\n";
         }
         if(multas >= MaiorMulta){
             MaiorCarteira = carteira;
@@ -37,5 +37,5 @@ int main()
         ValorLocal = 0;
     }
     cout << "O valor total das multa foram R$" << ValorTotal;
-    cout << "O numero da carteira do motorista que obteve o maior número de multas é: " << MaiorCarteira
+    cout << "O numero da carteira do motorista que obteve o maior número de multas é: " << MaiorCarteira;
 }
