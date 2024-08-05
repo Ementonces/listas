@@ -15,8 +15,8 @@ int main()
         }
     }
     if(soma == n){
-        cout << "o numero é perfeito";
+        cout << "\to numero é perfeito";
     }else{
-        cout << "o numero não é perfeito";
+        cout << "\to numero não é perfeito";
     }
 }
