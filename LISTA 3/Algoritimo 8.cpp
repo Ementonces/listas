@@ -12,16 +12,16 @@ using namespace std;
 
 int main()
 {
-    int graos = 1, CI, CF;
+    float graos = 1, CF;
     do{
-        cout << "em que casa você vai começar em que casa você vai terminar?";
-        cin >> CI >> CF;
-    }while(CI <= 0 || CF >=64);
-    
-    for(int cont = CI; cont < CF; cont++){
+        cout << "Até que casa você irá pagar? ";
+        cin >> CF;
+    }while(CF >=64);
+
+    for(int cont = 1; cont < CF; cont++){
         graos = graos * 2;
+        
     }
-    cout << "O monge vai receber " << graos<< " grãos";
-    
-    
+   cout << "O monge vai receber " << graos<< " grãos";
+
 }
