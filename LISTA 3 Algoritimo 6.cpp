@@ -14,7 +14,8 @@ int main()
     int randon, guess;
     srand(time(NULL));
     randon = rand() % 11;
-    for(int tent = 0; tent > 10 || guess == randon; tent++){
+    cout << randon;
+    for(int tent = 0; tent < 3 || guess != randon; tent++){
         cout << "Tente adivinhar o numero (1 a 10): ";
         cin >> guess;
         if(guess < randon){
@@ -23,7 +24,7 @@ int main()
             if(guess > randon){
                 cout << "\to numero é menor que esse\n";
             }else{
-                cout << "\tparabens você acertou\n";
+                cout << "\tparábens você acertou\n";
             }
         }
         
